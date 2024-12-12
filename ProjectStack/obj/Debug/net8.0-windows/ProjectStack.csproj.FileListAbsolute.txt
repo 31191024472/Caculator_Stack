@@ -1,0 +1,17 @@
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\bin\Debug\net8.0-windows\ProjectStack.exe
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\bin\Debug\net8.0-windows\ProjectStack.deps.json
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\bin\Debug\net8.0-windows\ProjectStack.runtimeconfig.json
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\bin\Debug\net8.0-windows\ProjectStack.dll
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\bin\Debug\net8.0-windows\ProjectStack.pdb
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.MainForm.resources
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.csproj.GenerateResource.cache
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.AssemblyInfoInputs.cache
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.AssemblyInfo.cs
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.csproj.CoreCompileInputs.cache
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.dll
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\refint\ProjectStack.dll
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.pdb
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.genruntimeconfig.cache
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ref\ProjectStack.dll
+C:\Users\Matebook D15\source\repos\ProjectStack\ProjectStack\obj\Debug\net8.0-windows\ProjectStack.Properties.Resources.resources
