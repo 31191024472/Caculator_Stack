@@ -54,6 +54,8 @@ namespace ProjectStack
             butoonMenu = new Button();
             labelExpression = new Label();
             panelHistory = new Panel();
+            labelDeleteAll = new Label();
+            labelDeleteHistory = new Label();
             listBoxHistory = new ListBox();
             displayPanel.SuspendLayout();
             panelHistory.SuspendLayout();
@@ -315,7 +317,7 @@ namespace ProjectStack
             buttonPercent.TabIndex = 23;
             buttonPercent.Text = "%";
             buttonPercent.UseVisualStyleBackColor = true;
-            buttonPercent.Click += OperatorButton_Click;
+            buttonPercent.Click += buttonPercent_Click;
             // 
             // buttonCircum
             // 
@@ -388,11 +390,37 @@ namespace ProjectStack
             // panelHistory
             // 
             panelHistory.BackColor = SystemColors.ControlDarkDark;
+            panelHistory.Controls.Add(labelDeleteAll);
+            panelHistory.Controls.Add(labelDeleteHistory);
             panelHistory.Controls.Add(listBoxHistory);
-            panelHistory.Location = new Point(3, 230);
+            panelHistory.Location = new Point(3, 241);
             panelHistory.Name = "panelHistory";
             panelHistory.Size = new Size(418, 363);
             panelHistory.TabIndex = 29;
+            // 
+            // labelDeleteAll
+            // 
+            labelDeleteAll.AutoSize = true;
+            labelDeleteAll.BackColor = SystemColors.ButtonFace;
+            labelDeleteAll.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelDeleteAll.Location = new Point(340, 330);
+            labelDeleteAll.Name = "labelDeleteAll";
+            labelDeleteAll.Size = new Size(69, 23);
+            labelDeleteAll.TabIndex = 31;
+            labelDeleteAll.Text = "Xóa hết";
+            labelDeleteAll.Click += labelDeleteAll_Click;
+            // 
+            // labelDeleteHistory
+            // 
+            labelDeleteHistory.AutoSize = true;
+            labelDeleteHistory.BackColor = SystemColors.ButtonFace;
+            labelDeleteHistory.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            labelDeleteHistory.Location = new Point(9, 330);
+            labelDeleteHistory.Name = "labelDeleteHistory";
+            labelDeleteHistory.Size = new Size(39, 23);
+            labelDeleteHistory.TabIndex = 30;
+            labelDeleteHistory.Text = "Xóa";
+            labelDeleteHistory.Click += labelDeleteHistory_Click;
             // 
             // listBoxHistory
             // 
@@ -441,6 +469,7 @@ namespace ProjectStack
             displayPanel.ResumeLayout(false);
             displayPanel.PerformLayout();
             panelHistory.ResumeLayout(false);
+            panelHistory.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -478,6 +507,8 @@ namespace ProjectStack
         private Button butoonMenu;
         private Panel panelHistory;
         private ListBox listBoxHistory;
+        private Label labelDeleteHistory;
+        private Label labelDeleteAll;
     }
 
 

@@ -11,14 +11,13 @@ namespace ProjectStack
 
         public override string ToString()
         {
-            // Định dạng hiển thị: căn trái phép tính và căn phải thời gian
-            string formattedExpression = $"{Expression} = {Result}";
+            string formattedExpression = $"{Expression ?? "N/A"} = {Result ?? "N/A"}";
             string formattedDate = Time.ToString("MM/dd/yyyy HH:mm:ss");
-
-            // Căn chỉnh bằng cách sử dụng PadRight và PadLeft
             return formattedExpression.PadRight(20) + formattedDate.PadLeft(30);
         }
+
     }
+
 
     public class HistoryManager
     {
@@ -31,18 +30,79 @@ namespace ProjectStack
             {
                 Expression = expression,
                 Result = result,
-                Time = DateTime.Now // Lưu thời gian thực hiện
+                Time = DateTime.Now
             });
         }
 
-        // Tải lịch sử phép tính vào ListBox
+
+        // Lấy toàn bộ lịch sử (đảm bảo phần tử trên cùng là mới nhất)
         public List<CalculationRecord> LoadHistory()
         {
-            // Chuyển stack thành list bằng cách sử dụng Linq
-            return calculationHistory.Reverse().ToList(); // Đảo ngược thứ tự vì Stack là LIFO
+            return new List<CalculationRecord>(calculationHistory);
         }
+        public void ClearHistory()
+        {
+            calculationHistory.Clear();
+        }
+        public bool RemoveRecord(string expression)
+        {
+            Stack<CalculationRecord> tempStack = new Stack<CalculationRecord>();
+            bool isRemoved = false;
+
+            // Duyệt qua stack, tìm và loại bỏ phần tử có biểu thức khớp
+            while (calculationHistory.Count > 0)
+            {
+                var record = calculationHistory.Pop();
+                if (!isRemoved && record.Expression == expression)
+                {
+                    isRemoved = true;
+                }
+                else
+                {
+                    tempStack.Push(record);
+                }
+            }
+
+            // Đưa các phần tử còn lại trở lại stack chính
+            while (tempStack.Count > 0)
+            {
+                calculationHistory.Push(tempStack.Pop());
+            }
+
+            return isRemoved; // Trả về true nếu đã xóa, false nếu không tìm thấy
+        }
+        // Cập nhật một phép toán trong lịch sử
+        public void UpdateHistory(string oldExpression, string newExpression, string newResult)
+        {
+            Stack<CalculationRecord> tempStack = new Stack<CalculationRecord>();
+            bool isUpdated = false;
+
+            // Duyệt qua stack, loại bỏ phép tính cũ nếu tồn tại
+            while (calculationHistory.Count > 0)
+            {
+                var record = calculationHistory.Pop();
+                if (!isUpdated && record.Expression == oldExpression)
+                {
+                    isUpdated = true;
+                }
+                else
+                {
+                    tempStack.Push(record);
+                }
+            }
+
+            // Đưa tất cả phép tính cũ trở lại stack
+            while (tempStack.Count > 0)
+            {
+                calculationHistory.Push(tempStack.Pop());
+            }
+
+            // Thêm phép tính mới vào đầu stack nếu đã cập nhật
+            if (isUpdated)
+            {
+                SaveCalculation(newExpression, newResult);
+            }
+        }
+
     }
-
-
-
 }

@@ -69,15 +69,5 @@ public class Stack
         count = 0;
     }
     // Tạo một bản sao của stack
-    public Stack Clone()
-    {
-        Stack clonedStack = new Stack();
-        Node current = top;
-        while (current != null)
-        {
-            clonedStack.Push(current.Value);
-            current = current.Next;
-        }
-        return clonedStack;
-    }
+   
 }

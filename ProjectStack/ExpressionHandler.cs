@@ -69,15 +69,20 @@ namespace ProjectStack
             return 0;
         }
 
-        // Hàm tính toán biểu thức
+        //Hàm tính toán biểu thức 
         public double EvaluateExpression(string expression)
         {
+            // Xử lý ký tự '%' trước khi tính toán
+            expression = ProcessPercentInExpression(expression);
+
             // Chuyển từ trung tố sang hậu tố
             var postfixExpression = InfixToPostfix(expression);
 
             // Tính toán biểu thức hậu tố
             return EvaluatePostfix(postfixExpression);
         }
+
+
 
         // Chuyển từ trung tố qua hậu tố
         public List<string> InfixToPostfix(string expression)
@@ -143,5 +148,62 @@ namespace ProjectStack
 
             return output;
         }
+        private string ProcessPercentInExpression(string expression)
+        {
+            // Loại bỏ khoảng trắng trong biểu thức
+            expression = expression.Replace(" ", "");
+
+            StringBuilder processedExpression = new StringBuilder();
+            int i = 0;
+
+            while (i < expression.Length)
+            {
+                char currentChar = expression[i];
+
+                if (currentChar == '%')
+                {
+                    int j = i - 1;
+
+                    // Tìm số trước ký tự '%', hỗ trợ cả số âm
+                    while (j >= 0 && (Char.IsDigit(expression[j]) || expression[j] == '.' || expression[j] == '-'))
+                    {
+                        // Nếu gặp dấu '-', kiểm tra xem có phải số âm hay không
+                        if (expression[j] == '-' && (j == 0 || IsOperator(expression[j - 1].ToString()) || expression[j - 1] == '('))
+                        {
+                            j--; // Đây là số âm, tiếp tục lùi
+                        }
+                        else if (expression[j] == '-')
+                        {
+                            break; // Đây là toán tử trừ, dừng lại
+                        }
+
+                        j--;
+                    }
+
+                    j++; // Đưa về đầu số
+
+                    string number = expression.Substring(j, i - j);
+
+                    // Chuyển số thành giá trị phần trăm
+                    if (double.TryParse(number, out double percentValue))
+                    {
+                        // Thay thế số và ký tự '%' bằng giá trị đã tính
+                        processedExpression.Remove(j, processedExpression.Length - j);
+                        processedExpression.Append($"({percentValue} / 100)");
+                        i = j + $"({percentValue} / 100)".Length - 1; // Cập nhật con trỏ
+                    }
+                }
+                else
+                {
+                    processedExpression.Append(currentChar);
+                }
+                i++;
+            }
+
+            return processedExpression.ToString();
+        }
+
+
+
     }
 }
