@@ -165,7 +165,7 @@ namespace ProjectStack
                     int j = i - 1;
 
                     // Tìm số trước ký tự '%', hỗ trợ cả số âm
-                    while (j >= 0 && (Char.IsDigit(expression[j]) || expression[j] == '.' || expression[j] == '-'))
+                    while (j >= 0 && (char.IsDigit(expression[j]) || expression[j] == '.' || expression[j] == '-'))
                     {
                         // Nếu gặp dấu '-', kiểm tra xem có phải số âm hay không
                         if (expression[j] == '-' && (j == 0 || IsOperator(expression[j - 1].ToString()) || expression[j - 1] == '('))
@@ -184,13 +184,28 @@ namespace ProjectStack
 
                     string number = expression.Substring(j, i - j);
 
-                    // Chuyển số thành giá trị phần trăm
-                    if (double.TryParse(number, out double percentValue))
+                    if (!double.TryParse(number, out double parsedNumber))
                     {
-                        // Thay thế số và ký tự '%' bằng giá trị đã tính
-                        processedExpression.Remove(j, processedExpression.Length - j);
-                        processedExpression.Append($"({percentValue} / 100)");
-                        i = j + $"({percentValue} / 100)".Length - 1; // Cập nhật con trỏ
+                        throw new ArgumentException($"Biểu thức không hợp lệ tại ký tự '%': {expression}");
+                    }
+
+                    // Kiểm tra ký tự ngay sau '%'
+                    if (i + 1 < expression.Length && char.IsDigit(expression[i + 1]))
+                    {
+                        // Trường hợp 'x%y' (Mod):
+                        // Giữ lại '%' và xử lý như toán tử mod
+                        processedExpression.Append(number + " % ");
+                        i++; // Bỏ qua '%'
+                    }
+                    else if (i + 1 < expression.Length && IsOperator(expression[i + 1].ToString()))
+                    {
+                        // Trường hợp 'x%*y': x phần trăm nhân y
+                        processedExpression.Append($"({parsedNumber} / 100)");
+                    }
+                    else
+                    {
+                        // Trường hợp 'x%': x phần trăm
+                        processedExpression.Append($"({parsedNumber} / 100)");
                     }
                 }
                 else
@@ -202,8 +217,6 @@ namespace ProjectStack
 
             return processedExpression.ToString();
         }
-
-
 
     }
 }

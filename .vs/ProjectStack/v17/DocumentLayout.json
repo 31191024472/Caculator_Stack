@@ -3,42 +3,50 @@
   "WorkspaceRootPath": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\expressionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\expressionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\historymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\historymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\expressionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\expressionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\stack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\stack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\projectstack\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\calculationrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\calculationrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|c:\\users\\matebook d15\\source\\repos\\projectstack\\projectstack\\caculatorclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{C06287C0-22F5-429A-8E11-C4F753C75943}|ProjectStack\\ProjectStack.csproj|solutionrelative:projectstack\\caculatorclassdiagram.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 249,
+      "VerticalTabListWidth": 243,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,13 +62,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "CaculatorClassDiagram.cd",
+              "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\CaculatorClassDiagram.cd",
+              "RelativeDocumentMoniker": "ProjectStack\\CaculatorClassDiagram.cd",
+              "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\CaculatorClassDiagram.cd",
+              "RelativeToolTip": "ProjectStack\\CaculatorClassDiagram.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-12-12T16:26:49.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\MainForm.cs",
+              "RelativeDocumentMoniker": "ProjectStack\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\MainForm.cs",
+              "RelativeToolTip": "ProjectStack\\MainForm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:06:21.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CalculationRecord.cs",
+              "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\CalculationRecord.cs",
+              "RelativeDocumentMoniker": "ProjectStack\\CalculationRecord.cs",
+              "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\CalculationRecord.cs",
+              "RelativeToolTip": "ProjectStack\\CalculationRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T15:13:23.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "HistoryManager.cs",
               "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\HistoryManager.cs",
               "RelativeDocumentMoniker": "ProjectStack\\HistoryManager.cs",
               "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\HistoryManager.cs",
               "RelativeToolTip": "ProjectStack\\HistoryManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T16:01:44Z",
               "EditorCaption": ""
@@ -73,40 +119,27 @@
               "RelativeDocumentMoniker": "ProjectStack\\ExpressionHandler.cs",
               "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\ExpressionHandler.cs",
               "RelativeToolTip": "ProjectStack\\ExpressionHandler.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAMIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-11T05:33:06.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Stack.cs",
               "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\Stack.cs",
               "RelativeDocumentMoniker": "ProjectStack\\Stack.cs",
               "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\Stack.cs",
               "RelativeToolTip": "ProjectStack\\Stack.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAEcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T16:16:39.635Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\MainForm.cs",
-              "RelativeDocumentMoniker": "ProjectStack\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\MainForm.cs",
-              "RelativeToolTip": "ProjectStack\\MainForm.cs",
-              "ViewState": "AgIAAPUAAAAAAAAAAAAAAAUBAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T16:01:45.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\Program.cs",
               "RelativeDocumentMoniker": "ProjectStack\\Program.cs",
@@ -131,8 +164,12 @@
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Matebook D15\\source\\repos\\ProjectStack\\ProjectStack\\MainForm.cs",
               "RelativeDocumentMoniker": "ProjectStack\\MainForm.cs",
@@ -141,10 +178,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T15:34:56.906Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

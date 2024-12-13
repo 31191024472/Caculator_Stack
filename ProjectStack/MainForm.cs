@@ -2,6 +2,8 @@
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Reflection;
+using System.Text;
 
 namespace ProjectStack
 {
@@ -13,19 +15,14 @@ namespace ProjectStack
             panelHistory.Visible = false;
             // Đăng ký sự kiện MouseDoubleClick cho listBoxHistory
             listBoxHistory.MouseDoubleClick += listBoxHistory_MouseDoubleClick;
-
-
         }
 
         private Stack<string> redoHistory = new Stack<string>(); // Stack cho Redo
-        private Stack<string> calculationHistory = new Stack<string>(); // Stack chứa lịch sử các phép toán
         private Stack<string> expressionHistory = new Stack<string>(); // Stack lưu trữ lịch sử biểu thức
         private HistoryManager historyManager = new HistoryManager(); // Đối tượng quản lý lịch sử
-        private int currentIndex = -1; // Vị trí hiện tại trong lịch sử
         private string lastExpressionBeforeEquals = ""; // Biểu thức trước khi nhấn "="
         private ExpressionHandler expressionHandler = new ExpressionHandler();
         private bool isCalculated = false;  // Cờ theo dõi trạng thái đã tính toán hay chưa
-        private bool hasStateChanged = false; // Cờ theo dõi thay đổi
         private void AdjustButtonImage()
         {
             // Đảm bảo rằng hình ảnh đã được thêm vào Resources dưới tên "menuIcon"
@@ -34,7 +31,7 @@ namespace ProjectStack
             // Cập nhật hình ảnh cho button
             buttonMenu.Image = originalImage;
         }
-
+         
 
         // Lưu lại trạng thái hiện tại của biểu thức
         private void SaveCurrentState()
@@ -182,15 +179,19 @@ namespace ProjectStack
                 }
                 else
                 {
+                    // Làm tròn kết quả đến 8 chữ số thập phân
+                    string formattedResult = Math.Round(result, 8).ToString();
+
                     // Hiển thị kết quả (to, rõ ở dưới)
-                    textBoxResult.Text = result.ToString();
-                    currentInput = result.ToString(); // Cập nhật biểu thức hiện tại
+                    textBoxResult.Text = formattedResult;
+                    currentInput = formattedResult; // Cập nhật biểu thức hiện tại
                 }
 
+                // Lưu lại biểu thức vào lịch sử
                 expressionHistory.Push(lastExpressionBeforeEquals);
 
                 // Lưu phép tính vào lịch sử
-                SaveCalculation(lastExpressionBeforeEquals, result.ToString());
+                SaveCalculation(lastExpressionBeforeEquals, textBoxResult.Text);
 
                 // Xóa Redo stack sau khi tính toán xong
                 redoHistory.Clear();
@@ -203,12 +204,6 @@ namespace ProjectStack
             }
         }
 
-
-        private void UpdateLabels(string input)
-        {
-            labelExpression.Text = ""; // Làm trống biểu thức mờ
-            textBoxResult.Text = input; // Hiển thị biểu thức hiện tại
-        }
 
 
         // Xử lý khi nhấn nút "C" để xóa
@@ -252,7 +247,7 @@ namespace ProjectStack
         }
 
 
-
+         
         // Xử lý khi nhấn nút Undo
         private void buttonUndo_Click(object sender, EventArgs e)
         {
@@ -402,13 +397,10 @@ namespace ProjectStack
                 {
                     currentInput += "%"; // Thêm ký tự '%'
                     textBoxResult.Text = currentInput; // Cập nhật hiển thị
+                    isCalculated = false;  // Đặt lại cờ isCalculated sau khi nhập số mới
+
                 }
             }
-        }
-
-        private Stack<string> GetCalculationHistory()
-        {
-            return calculationHistory;
         }
 
         private void labelDeleteAll_Click(object sender, EventArgs e)
@@ -458,6 +450,6 @@ namespace ProjectStack
             }
         }
 
-
     }
+    
 }
